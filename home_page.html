@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <style>
+    html{
+      background-color: #CEC0F6;
+    }
+    h1 {
+      font-family: 'Poppins', sans-serif;
+      margin-top: 25%;
+      font-size: 15vw;
+      color: #7461a6;
+      margin-bottom: 0;
+
+      -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #1F0D4D;
+    }
+    p {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .bottom_img{
+      margin-bottom: 0%;
+    }
+    .joinnow{
+      width: 50%;
+      height: 90%;
+      border-radius: 20px;
+      background-color: #4e2780;
+      padding: 15px;
+      margin-top: 18%;
+    }
+    .alreadyaccount{
+      margin-top: 7%;
+    }
+    a{
+      color: #ffffff;
+      font-size: 4.4vw;
+    }
+    .signinbutton{
+      color: #ffffff;
+    }
+      .button {
+        width: 205px;
+        height: 33.5px;
+        background-color: #4e2780;
+        border-radius: 10px;
+        border: 2px;
+        border-color: #4e2780;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 35px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        color: #ffffff;
+        padding: 10px 0;
+
+      }
+        .container {
+      width: 100%;
+      height: auto;
+      display: grid;
+      background-color: #CEC0F6
+     
+    }
+
+    .container--item {
+        background-color: #CEC0F6;
+        text-align: center;
+      }
+
+    .div2 {
+      grid-area: 1 ;
+      }
+
+    .div3 {
+      grid-area: 2;
+      }
+
+    .div5 {
+      grid-area: 3;
+      margin-bottom: 0%;
+      margin-top: 16%;
+      margin-left: 2%;
+      }
+  </style>
+  <body>
+    <div class="container">
+      <div class="div2 container--item">
+        <h1>CoFinder</h1>
+        <p>
+          Connect with fellow coworkers <br />
+          through a fun guessing game!
+        </p>
+      </div>
+      <div class="div3 container--item">
+        <div class="buttodiv">
+          <button class="joinnow">
+            <a href="./create_info.html">
+              Join Now
+            </a>
+          </button>
+        </div>
+        <p class="alreadyaccount" style="text-underline-position: auto;">
+          Already have an account? 
+          <a class="signinbutton" href="#">Sign In</a> 
+        </p>
+      </div>
+      <div class="div5 container--item">
+        <img class="bottom_img" src="./assets/images/group.png" alt="people conversing" width="100%" />
+      </div>
+    </div>
+  </body>
+</html>

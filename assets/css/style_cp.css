@@ -1,0 +1,158 @@
+html {
+    background-color: #CEC0F6;
+}
+
+/* main container for page */
+.icon_container {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:   1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title icons"
+      "questions questions"
+      "choose_icon choose_icon";
+  }
+  
+  /* title container for text */
+  .backbuttondiv{
+    margin-top: 10px;
+    padding-top: 0;
+  }
+  .backbutton{
+    float: left;
+    border: none;
+    padding: 5px ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 9px 3px;
+    border-radius: 50%;
+    }
+  .title{
+    grid-area: title;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
+        .profile_title{
+            color: white;
+            text-align: left;
+        }
+
+        .title_text {
+            font-size: 6.5vw;
+            font-family: 'Poppin', 'Montserrat';
+            font-weight: bold;
+            margin-top: 50%;
+
+        }
+        .under_text {
+            font-family:  'Montserrat';
+            font-weight: 500;
+            font-size: 5vw;
+        }
+  /* icon container for pictures */
+  .icons { 
+    grid-area: icons;
+    margin-top: 5%;
+    max-width: 100%;
+    margin-bottom: 0;
+    }  
+        img,.img_iconsCP{
+            max-width: 100% ;
+            height: auto;
+            float: center;
+            position: inherit;
+        }
+
+  /* question container for profile text */
+  .questions { 
+    grid-area: questions;
+    margin-top: 3%;
+
+    }
+    label{
+        color: #27115f;
+        font-family: 'Poppin', 'Montserrat';
+        font-size: 3vw;
+        margin: 3px 3% auto;
+        font-weight: 400;
+        }
+    input {
+        font-family: 'Poppin', 'Montserrat';
+        margin: 2px 3% auto;
+        width: 90% ;
+        height: 2.3rem;
+        border-radius: 10px;
+        margin: 2px 3% auto;
+        padding: 10px auto;
+
+    }
+    
+    .fullnamelabel {
+        margin: 3% auto;
+        margin-left: 3%;
+    }
+    .companylabel {
+        margin: 3% auto;
+        margin-left: 3%;
+    }
+
+  
+  /* icon container for choosing a avatar */
+  .choose_icon { 
+    grid-area: choose_icon; 
+    }
+    .avatar_text {
+        font-family:  'Montserrat';
+        font-size: 15pt;
+        text-align: center;
+        margin-top: 6%;
+    }
+
+    .avatars{
+        margin-left: 10%;
+        border: none;
+        
+    }
+
+        .blackhair {
+            width: 16%;
+        }
+        .purplehair{
+            width: 19%;
+        }
+        .partyhat{
+            width: 16%;
+            padding-left: 5px;
+        }
+        .purplecrown {
+            width: 16%;
+
+        }
+        .cowboyhat {
+            width: 21%;
+        }
+
+    span {
+        color: #27115f;
+    }
+    .nextbutton{
+            border: none;
+            padding: 9px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin: 2px 1px;
+            border-radius: 50%;
+            float: right;
+            
+    }
+    .bottomline {
+        padding-top: 7px;
+        width: 80%;
+        height: auto;
+        padding-left: 40px;
+    }

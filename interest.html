@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Interests</title>
+    <style type="text/css">
+      body{
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+      }
+
+      .container {  display: grid;
+        gap: 0px 0px;
+        grid-template-areas:
+          "title"
+          "interest_bubbles"
+          "nextlines";
+        }
+      
+        /* top box that includes back button and title */
+        .title{
+          grid-area: title;
+
+        }
+
+          .backbuttondiv{
+            padding-top: 0;
+          }
+          .backbutton{
+            float: left;
+            border: none;
+            padding: 8px ;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 25px;
+            margin-left: 5%;
+            border-radius: 50%;
+            }
+            h1 {
+              font-family: "Poppins", sans-serif;
+              color: #1d0e49;
+              font-weight: bolder;
+              grid-area: div1;
+              font-size: 7vw;
+              text-align: center;
+              vertical-align: center;
+              margin-top: 20%;
+              margin-bottom: 15%;
+            }
+      
+      /* middle box that includes all the interest bubbles */
+      .interest_bubbles{
+        grid-area: interest_bubbles;
+        width: 82%;
+        height: auto;
+        align-items: center;
+        margin-left: 9%;
+      }      
+        .categories {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          font: 3vw;
+          justify-content: space-between;
+
+        }
+        .button{
+          padding: 15px;
+          background-color: #ffffff;
+          margin: 10%;
+          border-radius: 25px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+          align-items: center;
+          }
+        .button:hover{
+          background-color: rgb(211, 149, 255);
+        }
+        .button:focus{
+          background-color: rgb(211, 149, 255);
+          cursor: pointer;
+        
+        }
+      /* bottom box that includes next button and bar */
+      .nextlines{
+        grid-area: nextlines;
+        width: 80%;
+        align-items: center;
+        margin-top: 6%;
+        margin-left: 10%;
+      }
+      .bottomline{
+        margin-top: 10%;
+        width: 100%;
+        height: auto;
+        height: auto;
+        align-items: center;
+        margin-left: 10%;
+      }
+      .nextbutton{
+            border: none;
+            padding: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20%;
+            border-radius: 50%;
+            float: right;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        
+        <div class="title">
+          <div>
+            <button class="backbutton">
+              <a href="./create_info.html">
+                  <span class="material-symbols-outlined">
+                      arrow_back_ios
+                  </span>
+              </a>
+          </button>
+          </div>
+          <h1>Select Up to 5 Interests</h1>
+        </div>
+
+
+        <div class="interest_bubbles">
+          <div class="categories">
+            <div class="category ">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: black;"
+                      >music_note</i
+                    >
+                    Music
+           
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: #00bfae;"
+                    >sports_soccer</i
+                  >
+                  Soccer
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: brown;"
+                    >villa</i
+                  >
+                  Architecture
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: #4a4633;"
+                    >nightlife</i
+                  >
+                  Dancing
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                <i class="material-icons" style="font-size: 15px; color: #802922;"
+                  >brush</i
+                >
+                Art
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: green;"
+                    >park</i
+                  >
+                  Nature
+              </button>
+            </div>
+            <div class="category ">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: red;"
+                    >cruelty_free</i
+                  >
+                  Animals
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: black;"
+                    >fitness_center</i
+                  >
+                  Fitness
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: purple;"
+                    >outdoor_grill</i
+                  >
+                  Cooking
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: black;"
+                    >movie_filter</i
+                  >
+                  Movies
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                <i class="material-icons" style="font-size: 15px; color: #005c53;"
+                  >flight</i
+                >
+                Traveling
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: #9fc131;"
+                    >sports_tennis</i
+                  >
+                  Tennis
+              </button>
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: #d6d58e;"
+                    >piano</i
+                  >
+                  Concerts
+              </button>    
+            </div>
+            <div class="category">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: #ff9933;"
+                    >sports_esports</i
+                  >
+                  Gaming
+              </button>        
+            </div>
+            <div class="category ">
+              <button class="button">
+                  <i class="material-icons" style="font-size: 15px; color: #00abbd;"
+                    >museum</i
+                  >
+                  Museums
+              </button>        
+            </div>
+            <div class="category">
+              <button class="button">
+                <i class="material-icons" style="font-size: 15px; color: #0099dd;"
+                  >photo_camera</i
+                >
+                Photography
+              </button>        
+            </div>
+        </div>
+      </div>   
+      
+      <div class="nextlines">
+        <button class="nextbutton">
+          <a href="./interest.html">
+              <span class="material-symbols-outlined">
+              arrow_forward_ios
+              </span>
+          </a>
+        </button>
+          <img class="bottomline" src="./assets/images/bottomline2.png" alt="bottomline">
+      </div>
+
+    </div>   
+  </body>
+</html>

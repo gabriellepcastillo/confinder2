@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<style>
+    html{
+        background-image: url(./assets/images/create_account_bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container {  display: grid;
+
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title_text"
+    "enter_info"
+    "signup_account";
+}
+
+/* css for the top box */
+.title_text { 
+    grid-area: title_text;
+
+}
+    /* css for the title of the page */
+    .title{
+        font-size: 5.1vw;
+        font-family: 'Poppins', 'Montserrat';
+        font-weight: bolder;
+        text-align: left;
+        color: #1d0e49;
+        margin-top: 20%;
+        margin-left: 2%;
+
+    }
+    .textunder{
+        font-size: 4.7vw;
+        font-family: 'Montserrat';
+        text-align: left;
+        color: #1d0e49;
+        margin-left: 2%;
+    }
+
+/* Css for the middle box */
+.enter_info { 
+    grid-area: enter_info; 
+    width: 100%;
+    height: auto;
+    margin-top: 12%;
+
+}
+    /* css for the user information */
+    label{
+        font-size: 6vw;
+        font-family: 'Poppins';
+        text-align: left;
+        color: #1d0e49;
+        margin-left: 2%;
+    }
+    input{
+        margin-top: 3%;
+        font-size: 4vw;
+        font-family: 'Montserrat';
+        text-align: left;
+        color: #1d0e49;
+        margin-left: 2%;
+        width: 85%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .terms{
+        margin-top: 5%;
+    }
+        .agreetc{
+            font-size: 3.7vw;
+            font-family: 'Montserrat';
+            text-align: left;
+            color: #1d0e49;
+            width: 95%;
+            align-items: center;
+        }
+        .checkbox{
+            width: auto;
+            margin-left: 10%;
+        }
+
+ /* bottom box for sign up button and already account  */
+.signup_account { 
+    grid-area: signup_account;
+    margin-top: 5%;
+
+ }
+  .signbutton{
+    align-items: center;
+  }
+        .signtext{
+        color: #461e63;
+        font-size: 6.4vw;
+        font-family: 'Montserrat';
+
+        }
+        .sign_up{
+        width: 60%;
+        height: 20%;
+        border-radius: 20px;
+        background-color: #f6ed8a;
+        padding: 15px;
+        margin-top: 10%;
+        margin-left: 18%;
+        }
+        .alreadyaccount{
+            margin-top: 7%;
+         font-size: 4.6vw;
+        text-align: center;
+            
+        }
+        .signinbutton{
+        color: #ffffff;
+        font-size: 4.6vw;
+        }
+
+</style>
+<body>
+    <!-- main container -->
+    <div class="container">
+
+        <!-- top box that includes text and title -->
+        <div class="title_text">
+            <div class="title">
+                <h1>Create Account</h1>
+            </div>
+            <div class="textunder">
+                <p>
+                    Connect with your colleagues today!
+                </p>
+            </div>
+        </div>
+
+        <!-- middle box that includes the user inputinformation -->
+        <div class="enter_info">
+            <form action="#">
+                <!-- email -->
+                <label for="email"> Email Address</label>
+                <br>
+                <input  type="text" name="email" placeholder="Email...">
+                <br>
+                <br>
+                <!-- number -->
+                <label for="phone"> Phone Number</label>
+                <br>
+                <input  type="text" name="number" placeholder="Phone Number...">
+                
+                <br>
+                <br>
+                <!-- password -->
+                <label for="password"> Enter a Password</label>
+                <br>
+                <input  type="text" name="password" placeholder="Password...">
+            </form>
+            <div class="terms">
+                <input class="checkbox" type="checkbox" checked="checked">
+                <label class="agreetc">I agree to the terms and conditions
+                </label>
+            </div>
+        </div>
+
+        <!-- end box that includes the sign up button and already account -->
+        <div class="signup_account">
+            <div class="signbutton">
+                <button class="sign_up">
+                    <a class="signtext" href="./create_profile.html"> Sign Up</a>
+                </button>
+                <p class="alreadyaccount" style="text-underline-position: auto;">
+                    Already have an account? 
+                    <a class="signinbutton" href="./home_page.html">Sign In</a> 
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
